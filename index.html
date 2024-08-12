@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="E-commerce product page you can add, remove and display the products"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container">
+          <div class="menu">
+            <img class="menuBtn" src="./images/icon-menu.svg" alt="icon-menu" />
+            <img
+              class="closeBtn"
+              src="./images/icon-close.svg"
+              alt="icon-close"
+            />
+            <img src="./images/logo.svg" alt="logo" />
+            <nav>
+              <ul class="links">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="infoProduct">
+            <span class="counter"></span>
+            <svg
+              class="cart"
+              width="22"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#69707D"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <img class="avatar" src="./images/image-avatar.png" alt="avatar" />
+          </div>
+        </div>
+      </header>
+
+      <section class="landing p-0 pb-5 pt-lg-5 mt-0 mt-lg-4">
+        <div class="container position-relative">
+          <div
+            class="row justify-content-center align-items-center flex-column flex-lg-row gap-4 gap-lg-0"
+          >
+            <div class="products col-12 col-lg-6 text-center p-0">
+              <div class="box-image d-flex d-lg-none">
+                <div class="image prevButton border">
+                  <img class="left" src="/images/icon-previous.svg" />
+                </div>
+                <div class="image nextButton border">
+                  <img class="left" src="/images/icon-next.svg" />
+                </div>
+              </div>
+              <img
+                class="product"
+                src="./images/image-product-1.jpg"
+                alt="product-1"
+              />
+              <div class="thumbnail d-none d-lg-flex">
+                <div class="image active">
+                  <img
+                    class="active"
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="product-1"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="./images/image-product-2-thumbnail.jpg"
+                    alt="product-2"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="./images/image-product-3-thumbnail.jpg"
+                    alt="product-3"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="./images/image-product-4-thumbnail.jpg"
+                    alt="product-4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="info col-12 col-lg-5 ps-4 pe-4 p-lg-0">
+              <span>Sneaker Company</span>
+              <h1>Fall Limited Edition Sneakers</h1>
+              <p>
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+              <div
+                class="price d-flex justify-content-between align-items-center flex-row flex-lg-row"
+              >
+                <div class="discount">
+                  <h2>$<span class="thePrice">125.00</span></h2>
+                  <span>50%</span>
+                </div>
+                <p>$250.00</p>
+              </div>
+              <div class="addToCart flex-column flex-lg-row">
+                <div class="numCounter">
+                  <img
+                    class="minus"
+                    src="./images/icon-minus.svg"
+                    alt="icon-minus"
+                  />
+                  <span class="num">0</span>
+                  <img
+                    class="plus"
+                    src="./images/icon-plus.svg"
+                    alt="icon-plus"
+                  />
+                </div>
+                <div class="add">
+                  <svg
+                    width="22"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                      fill="hsl(0, 0%, 0%)"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                  <span>Add to cart</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
